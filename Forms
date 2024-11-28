@@ -1,0 +1,15 @@
+we can create heading using the form tag.
+the form tag is used to collect the user data.
+in form tag there is an attribute
+-> autocomplete attribute - in autocomplete when the user has saved any of the details it will show when we click on it. no need to take data manually
+-> action attribute - 
+-> method - 
+    - get -
+    - post -
+-> enctype -
+
+read only - user cant edit
+disBLED - user cant even click on it
+value - to display a thing on click box eg. value="hello"
+box sizing - the width of page wont overflow
+vh fits the screen even in mobile and laptop
