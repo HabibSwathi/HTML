@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Man</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .img1, .img2{
+            background-color: white;
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            animation: movingAnimation 20s linear infinite alternate;
+        }
+
+        @keyframes movingAnimation{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .road{
+            position: absolute;
+            width: 100%;
+            height:50px;
+            background-color: black;
+            bottom: -20px;
+        }
+        .img2{
+            position: absolute;
+            width: 200px;
+            background-color: transparent  !important;
+            bottom: 100px;
+        }
+        .h1{
+            font-size: 4rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .clouds{
+            position: absolute;
+            width:100%;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+        }
+        .clouds img{
+            width: 300px;
+            background-color: transparent;
+            animation: cloudsAnimation 1s ease-in-out infinite alternate;
+        }
+        @keyframes cloudAnimation{
+            0%{
+                transform: translateY(-30px);
+            }
+            100%{
+                transform: translateY(30px);
+            }
+        }
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <img class="img1" src="https://i.pinimg.com/originals/54/66/14/546614aab23db59b019df6f97d577704.gif" alt="no image" style="animation-delay: 0s;">
+        <img class="img1" src="https://i.pinimg.com/originals/54/66/14/546614aab23db59b019df6f97d577704.gif" alt="no image" style="animation-delay: 0.5s;">
+        <img class="img1" src="https://i.pinimg.com/originals/54/66/14/546614aab23db59b019df6f97d577704.gif" alt="no image" style="animation-delay: 1s;">
+        <div class="road">
+            <img class="img2" src="https://media4.giphy.com/media/ghiMEnnnIE5xe/200w.gif?cid=6c09b95257f207dq9ye5ov7o051m9y9c3btms6d0vxibwmwv&ep=v1_gifs_search&rid=200w.gif&ct=s" alt="no image">
+        </div>
+        <div class="clouds">
+            <img src="https://www.freeiconspng.com/thumbs/rain-png/rain-clouds-png-27.png" alt="no image" style="animation-delay: 0s;">
+            <img src="https://www.freeiconspng.com/thumbs/rain-png/rain-clouds-png-27.png" alt="no image" style="animation-delay: 0.5s;">
+            <img src="https://www.freeiconspng.com/thumbs/rain-png/rain-clouds-png-27.png" alt="no image" style="animation-delay: 1s;">
+        </div>
+    </section>
+</body>
+</html>

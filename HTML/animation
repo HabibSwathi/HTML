@@ -1,0 +1,2 @@
+animation : keyframe_name time animation_type how_many_times 
+z-index : brings the bottom layer on top

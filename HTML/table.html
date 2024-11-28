@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test table with merged cells</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table th{
+            background-color: aqua;
+            letter-spacing: 2px;
+            color: aliceblue;
+            border: 2px solid #000;
+        }
+        table td{
+            font-size: 1.3rem;
+        }
+        table td:hover{
+            background-color: rgba(250, 235, 215, 0.426);
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>a test table with merged cells</caption>
+        <tr>
+            <th></th>
+            <th colspan="2">Average</th>
+            <th>Red eyes</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Height</th>
+            <th> weight</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th> Males</th>
+            <td> 1.9</td>
+            <td>40%</td>
+            <td>0.002</td>
+        </tr>
+        <tr>
+            <th> Females</th>
+            <td> 1.6</td>
+            <td>20%</td>
+            <td>0.004</td>
+        </tr>
+    </table>
+</body>
+</html>

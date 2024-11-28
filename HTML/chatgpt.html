@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Rowspan</title>
+    <style>
+        td img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            border: 2px solid orangered;
+            padding: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+            width: 100%; /* Ensure table spans the width of the container */
+        }
+        table td {
+            color: rgb(68, 71, 71);
+            background-color: #fff;
+            padding: 10px; /* Add padding for better spacing */
+            border: 1px solid #ddd; /* Add border for table cells */
+        }
+        table th {
+            background-color: rgb(89, 89, 244);
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px; /* Add padding for better spacing */
+        }
+        table td:hover {
+            background-color: rgba(87, 87, 252, 0.264); /* Corrected pseudo-class */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table with Rowspan</caption>
+        <tr>
+            <th rowspan="3">Username</th>
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <td>Swathi</td>
+            <td>the</td>
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td>Habib</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <th>Profiles</th>
+            <td></td>
+            <td><img src="https://via.placeholder.com/60" alt="Profile Image 1"></td>
+            <td><img src="https://via.placeholder.com/60" alt="Profile Image 2"></td>
+        </tr>
+        <tr>
+            <th rowspan="3">Address</th>
+        </tr>
+        <tr>
+            <th>Address1</th>
+            <td>test address</td>
+            <td>test address1</td>
+        </tr>
+        <tr>
+            <th>Address2</th>
+            <td>test address</td>
+            <td>test address2</td>
+        </tr>
+    </table>
+</body>
+</html>
